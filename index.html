@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugTracker Lite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>BugTracker Lite</h1>
+    <p>Track and solve your bugs with AI-powered solutions!</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Bug Form Section -->
+    <section id="bug-form-section">
+      <h2>Log a New Bug</h2>
+      <form id="bug-form">
+        <input type="text" id="title" placeholder="Bug Title" required />
+        <textarea id="description" placeholder="Bug Description" required></textarea>
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Add Bug</button>
+      </form>
+    </section>
+    
+    <div class="watermark-container">
+        <div class="bug-symbol" style="--size: 0.8; --opacity: 0.7; --rotate: 15; --speed: 0.6;">🐞</div>
+        <div class="bug-symbol" style="--size: 0.5; --opacity: 0.9; --rotate: -10; --speed: 0.8;">🐞</div>
+        <div class="bug-symbol" style="--size: 1; --opacity: 0.4; --rotate: 30; --speed: 0.3;">🐞</div>
+        <!-- Add more bug symbols here -->
+    </div>
+      
+
+    <!-- Bug List Section -->
+    <section id="bug-list-section">
+      <h2>Bug List</h2>
+      <ul id="bug-list">
+        <!-- Preloaded bugs will go here -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
